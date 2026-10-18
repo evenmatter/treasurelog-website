@@ -1,0 +1,4 @@
+# Internal visual-review files and checklists; do not publish.
+/review/
+.DS_Store
+__pycache__/
