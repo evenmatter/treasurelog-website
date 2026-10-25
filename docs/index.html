@@ -9,6 +9,7 @@
   <link rel="icon" href="assets/brand/treasurelog-logo.png" type="image/png">
   <link rel="preload" href="assets/fonts/oxanium.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles/site.css">
+  <script src="assets/js/launch-status.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,7 +25,7 @@
       <a href="privacy/">Privacy</a>
       <a href="press/">Press</a>
     </nav>
-    <a class="nav-cta" href="#availability">iOS app <span>Coming Soon</span></a>
+    <a class="nav-cta" href="#availability" data-store-cta data-fallback-href="#availability">iOS app <span data-launch-status>Coming Soon</span></a>
   </header>
 
   <main id="main">
@@ -35,7 +36,7 @@
       <p class="hero-intro">A native iPhone companion for tracking physical precious metals, following fine weight and reference prices, and working toward your next collection goal.</p>
         <div class="hero-actions">
           <a class="button button-gold" href="#features">Explore the features <span aria-hidden="true">↓</span></a>
-          <span class="coming-note"><span class="status-dot"></span> iOS release coming soon</span>
+          <span class="coming-note"><span class="status-dot"></span> <span data-availability-message>Treasure Log is coming soon to the App Store.</span></span>
         </div>
         <div class="hero-proof" aria-label="Product summary">
           <span><b>01</b> Your collection</span><i></i><span><b>02</b> Your goals</span><i></i><span><b>03</b> Your backup</span>
@@ -112,8 +113,8 @@
 
     <section class="availability wrap" id="availability">
       <div class="availability-mark" aria-hidden="true">✦</div>
-      <div><p class="eyebrow">The next chapter</p><h2>Treasure Log for iOS</h2><p>The App Store release is in the works. Check back here for updates.</p></div>
-      <span class="button button-muted" aria-disabled="true">Coming Soon</span>
+      <div><p class="eyebrow">Availability</p><h2>Treasure Log for iOS</h2><p data-availability-message>Treasure Log is coming soon to the App Store.</p><p class="release-date" data-release-date hidden></p></div>
+      <span class="button button-muted" data-coming-soon>Coming Soon</span><a class="button button-gold" data-app-store-link hidden>Download on the App Store</a>
     </section>
   </main>
 
@@ -123,7 +124,7 @@
       <p>Keep your collection in view.</p>
       <nav aria-label="Footer navigation"><a href="support/">Support</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="press/">Press</a><a href="mailto:evenmatterdev@gmail.com">Email Evenmatter</a></nav>
     </div>
-    <div class="wrap footer-legal"><span>Treasure Log · An Evenmatter app</span><span>Evenmatter Development · Developer brand · App Store release coming soon</span></div>
+    <div class="wrap footer-legal"><span>Treasure Log · An Evenmatter app</span><span>Evenmatter Development · Developer brand · App Store status: <span data-launch-status>Coming Soon</span></span></div>
   </footer>
 </body>
 </html>

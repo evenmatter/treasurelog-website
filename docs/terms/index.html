@@ -5,13 +5,14 @@
   <meta name="description" content="Informational terms and disclaimers for Treasure Log.">
   <title>Terms of Use — Treasure Log</title>
   <link rel="icon" href="../assets/brand/treasurelog-logo.png" type="image/png"><link rel="stylesheet" href="../styles/site.css">
+  <script src="../assets/js/launch-status.js" defer></script>
 </head>
 <body class="inner-page privacy-page terms-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="../" aria-label="Treasure Log home"><img src="../assets/brand/treasurelog-logo.png" width="52" height="52" alt=""><span>Treasure <b>Log</b></span></a>
     <nav class="main-nav" aria-label="Main navigation"><a href="../#features">Features</a><a href="../#screenshots">App preview</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a aria-current="page" href="./">Terms</a></nav>
-    <a class="nav-cta" href="../#availability">iOS app <span>Coming Soon</span></a>
+    <a class="nav-cta" href="../#availability" data-store-cta data-fallback-href="../#availability">iOS app <span data-launch-status>Coming Soon</span></a>
   </header>
   <main id="main" class="wrap inner-main">
     <div class="breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span>Terms of Use</span></div>
@@ -24,9 +25,9 @@
       <p>Treasure Log does not provide investment, trading, financial, tax, accounting, legal, or appraisal advice. App content is for personal organization and general information. You are responsible for deciding what to do with your collection and for consulting qualified professionals when appropriate.</p>
       <h2>3. Prices, estimates, and resale</h2>
       <p>Displayed values are estimates based on information entered in the app and available price references. Third-party prices may be delayed, stale, missing, incomplete, or inaccurate. Estimates are not an appraisal, dealer offer, or guaranteed market value. Treasure Log cannot guarantee that a dealer or other buyer will offer a particular amount or that you can resell an item for any displayed value.</p>
-      <p>The app can request reference quotes for Gold, Silver, and Platinum from <a href="https://gold-api.com/">Gold API</a>. Copper prices are entered manually. The Copper form provides an optional user-opened <a href="https://fred.stlouisfed.org/series/PCOPPUSDM">FRED/IMF monthly global average</a> in USD per metric tonne; Treasure Log does not automatically retrieve or import it. That benchmark is for reference and is not a live dealer or guaranteed resale price.</p>
+      <p>The app can request reference quotes for Gold, Silver, and Platinum from <a href="https://gold-api.com/">Gold API</a>. Gold API also supplies a provisional Copper HG market reference. Treasure Log interprets HG as USD per avoirdupois pound, although the provider has not explicitly documented the quote unit or underlying benchmark; it is not verified physical copper spot pricing. Including HG in collection valuations is optional and disabled by default. Manual Copper price overrides are supported and take precedence while set.</p>
       <h2>4. External services and links</h2>
-      <p>Price requests and links may involve third-party services, including Gold API and the FRED/IMF reference page. External services operate under their own terms and privacy practices, which can change. The app does not control those services. A reference or link is not an endorsement.</p>
+      <p>Price requests and links may involve third-party services, including Gold API. External services operate under their own terms and privacy practices, which can change. The app does not control those services. A reference or link is not an endorsement.</p>
       <h2>5. Records and backups</h2>
       <p>You are responsible for the accuracy of information you enter and for keeping copies of information you need. You may choose to export a JSON backup using the iOS file and sharing interface. The backup is not encrypted by Treasure Log. If you choose to save or share it through another app or service, that service may handle it under its own terms and practices.</p>
       <h2>6. Availability and software</h2>
